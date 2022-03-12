@@ -1,6 +1,7 @@
 import Plato from '../interfaces/plato.interface';
 
 export const Carnes: Plato[] = [
+    { nombre: 'CARNES', alergenos: [0], precioMedia: '1/2R', precioEntera: '1R' },
     { nombre: 'Pata de cordero / Leg of lamb', alergenos: [0], precioMedia: 'X', precioEntera: '1Kg/ 30.00' },
     { nombre: 'Paletilla cordero / Shoulder of lamb', alergenos: [0], precioMedia: 'X', precioEntera: '1Kg/ 30.00' },
     { nombre: 'Chuletilla cordero / Lamb chops', alergenos: [0], precioMedia: 'X', precioEntera: '18.00' },

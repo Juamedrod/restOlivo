@@ -1,6 +1,7 @@
 import Plato from '../interfaces/plato.interface';
 
 export const Desayunos: Plato[] = [
+    { nombre: 'DESAYUNOS', alergenos: [0], precioMedia: '1/2R', precioEntera: '1R' },
     { nombre: 'Café', alergenos: [0], precioMedia: 'X', precioEntera: '1.50' },
     { nombre: 'Infusiones', alergenos: [0], precioMedia: 'X', precioEntera: '1.50' },
     { nombre: 'Café o infusión con miel', alergenos: [0], precioMedia: 'X', precioEntera: '2.50' },

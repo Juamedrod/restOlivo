@@ -1,7 +1,7 @@
 import Plato from '../interfaces/plato.interface';
 
 export const Aperitivos: Plato[] = [
-    { nombre: '', alergenos: [0], precioMedia: '1/2R', precioEntera: '1R' },
+    { nombre: 'APERITIVO', alergenos: [0], precioMedia: '1/2R', precioEntera: '1R' },
     { nombre: 'Ensaladilla rusa  Russian salad (potato salad) (Patatas, huevo, atún y mayonesa)', alergenos: [3, 4, 7, 12, 6], precioMedia: '5.00', precioEntera: '8.50' },
     { nombre: 'Jamón de bellota (Iberian cured ham acorn fed)', alergenos: [0], precioMedia: '12.00', precioEntera: '18.00' },
     { nombre: 'Quesos (Cured cheese)', alergenos: [7, 12], precioMedia: '8.00', precioEntera: '12.00' },

@@ -20,6 +20,10 @@ export class CartaComponent implements OnInit {
         img: 'aperitivos.png'
       },
       {
+        label: 'Tapas',
+        img: 'tapas.png'
+      },
+      {
         label: 'Entrantes',
         img: 'entrantes.jpg'
       },

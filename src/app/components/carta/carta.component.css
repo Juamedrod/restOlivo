@@ -10,5 +10,11 @@
 }
 
 .shadowtextcustom{
-    text-shadow: 1px 1px 1px green;
+    text-shadow: 0px 0px 2px green;
 }
+
+.pointered{
+    cursor: pointer;
+}
+
+

@@ -24,7 +24,7 @@ body {
         
 }
 
-p,ul, li, a, h1, h2{
+p,ul, li, a, h1, h2, h3{
     font-family: 'Merienda One';
     font-weight: 700;
 }

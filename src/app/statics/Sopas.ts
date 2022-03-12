@@ -1,6 +1,7 @@
 import Plato from '../interfaces/plato.interface';
 
 export const Sopas: Plato[] = [
+    { nombre: 'SOPAS', alergenos: [0], precioMedia: '1/2R', precioEntera: '1R' },
     { nombre: 'Sopa de picadillo o puchero / Minced meat as soup', alergenos: [1, 9, 3, 12], precioMedia: 'X', precioEntera: '6.00' },
     { nombre: 'Sopa de marisco / Seafood soup', alergenos: [1, 9, 4, 12, 2, 14], precioMedia: 'X', precioEntera: '9.50' },
     { nombre: 'Sopa de ajo con huevo y jamón / Garlic soup with egg', alergenos: [1, 9, 3, 12], precioMedia: 'X', precioEntera: '9.00' },

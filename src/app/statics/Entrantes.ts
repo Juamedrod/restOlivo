@@ -1,6 +1,7 @@
 import Plato from '../interfaces/plato.interface';
 
 export const Entrantes: Plato[] = [
+    { nombre: 'ENTRANTES', alergenos: [0], precioMedia: '1/2R', precioEntera: '1R' },
     { nombre: 'Tomate aliñado (Tomate, cebolla, ajo y perejil)', alergenos: [12], precioMedia: 'X', precioEntera: '8.50' },
     { nombre: 'Ensalada mixta / Mixed Salad (Lechuga, tomate, remolacha, zanahoria, maíz, huevo, atún y cebolla)', alergenos: [3, 4, 12], precioMedia: 'X', precioEntera: '9.00' },
     { nombre: 'Ensalada de pollo / Chicken salad (Lechuga, uva, manzana, melón, pollo, salsa rosa y vinagre balsámico)', alergenos: [7, 12, 6, 3], precioMedia: 'X', precioEntera: '12.00' },
