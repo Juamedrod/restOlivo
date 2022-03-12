@@ -1,6 +1,6 @@
 <div class="container pt-3" id="carta">
     <div class="row p-2">
-        <div class="col-6 text-center" *ngFor="let carta of cartaItems; ">
+        <div class="col-6 col-md-4 text-center" *ngFor="let carta of cartaItems; ">
             <div class="text-center">
                 <div class="mini" [routerLink]="['/carta/', carta.label]"
                     [ngStyle]="{'background-image':'url(\'/assets/'+ carta.img + '\')'  }"></div>

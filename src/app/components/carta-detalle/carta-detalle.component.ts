@@ -26,6 +26,7 @@ export class CartaDetalleComponent implements OnInit {
 
   loadLista(cartaAMostrar: string) {
     this.lista = this.cartaService.listaAMostrar(this.cartaAMostrar);
+
   }
 
   toggler() {

@@ -1,13 +1,13 @@
 <div class="container-fluid container-md shadowed border py-3">
     <div class="row border shadow" *ngFor="let plato of lista let index=index" (click)="toggler()">
-        <div class="col-6 text-dark p-1 py-3 d-flex flex-column justify-content-center align-items-start">
-            {{plato.nombre}}</div>
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center p-1">
+        <p class="col-6 text-dark p-1 py-3 d-flex flex-column justify-content-center align-items-start">
+            {{plato.nombre}}</p>
+        <p class="col-3 d-flex flex-column justify-content-center align-items-center p-1">
             <strong>{{plato.precioMedia}}€</strong>
-        </div>
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center p-1">
+        </p>
+        <p class="col-3 d-flex flex-column justify-content-center align-items-center p-1 pe-3">
             <strong>{{plato.precioEntera}}€</strong>
-        </div>
+        </p>
         <div class="col-12 py-3" [ngClass]="{'d-block': toggle, 'd-none':!toggle}">
             <div class="col-12 py-3 justify-content-center align-items-center d-flex ">
                 <alergeno [tipoAlergeno]="alergeno" *ngFor="let alergeno of plato.alergenos"></alergeno>
