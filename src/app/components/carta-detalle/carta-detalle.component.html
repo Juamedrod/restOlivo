@@ -1,12 +1,16 @@
-<div class="container-fluid container-md shadowed border py-3" *ngIf="cartaAMostrar!='Vinos'">
-    <div class="row border shadow" *ngFor="let plato of lista let index=index" (click)="toggler()">
-        <p class="col-6 text-dark p-1 py-3 d-flex flex-column justify-content-center align-items-start">
+<div class="container-fluid container-md shadowed border py-3"
+    *ngIf="cartaAMostrar!='Vinos' && cartaAMostrar!='Alergenos'">
+    <div class="row border shadow" *ngFor="let plato of lista; let index=index;" (click)="toggler()">
+        <p class="col-6 p-1 py-3 d-flex flex-column justify-content-center align-items-start"
+            [ngClass]="{'text-primary': index==0, 'text-dark': index!=0}">
             {{plato.nombre}}</p>
         <ng-container *ngIf="plato.precioMedia!='X'; else elseBlock">
-            <p class="col-3 d-flex flex-column justify-content-center align-items-center p-1">
+            <p class="col-3 d-flex flex-column justify-content-center align-items-center p-1"
+                [ngClass]="{'text-primary': index==0, 'text-dark': index!=0}">
                 <strong>{{plato.precioMedia}}€</strong>
             </p>
-            <p class="col-3 d-flex flex-column justify-content-center align-items-center p-1 pe-3">
+            <p class="col-3 d-flex flex-column justify-content-center align-items-center p-1 pe-3"
+                [ngClass]="{'text-primary': index==0, 'text-dark': index!=0}">
                 <strong>{{plato.precioEntera}}€</strong>
             </p>
         </ng-container>
@@ -30,7 +34,6 @@
         <select class="form-select" aria-label="Default select example" (change)="selectDenominacion($event)">
             <option value='' selected>Todos los vinos</option>
             <option [value]="denominacion" *ngFor="let denominacion of listaDenominaciones">{{denominacion}}</option>
-
         </select>
     </div>
     <div class="row border shadow" *ngFor="let vino of listaVinos let index=index" (click)="toggler()">
@@ -46,4 +49,7 @@
             <p>{{'Denominación: ' +vino.denominacion}}</p>
         </div>
     </div>
+</div>
+<div *ngIf="cartaAMostrar=='Alergenos'">
+    <app-alergenos></app-alergenos>
 </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import Plato from 'src/app/interfaces/plato.interface';
 import Vino from 'src/app/interfaces/vino.interface';
 import { CartaService } from 'src/app/services/carta.service';
@@ -16,7 +16,7 @@ export class CartaDetalleComponent implements OnInit {
   toggle: boolean = false;
   listaDenominaciones: string[] = [];
 
-  constructor(private route: ActivatedRoute, private cartaService: CartaService) {
+  constructor(private route: ActivatedRoute, private cartaService: CartaService, private router: Router) {
     this.lista = [{ nombre: 'Loading', alergenos: [1], precioMedia: ' 0', precioEntera: ' 0' }];
     this.listaVinos = [{ nombre: 'Loading', denominacion: 'Loading', precio: 0, alergenos: [0] }];
   }
@@ -24,6 +24,7 @@ export class CartaDetalleComponent implements OnInit {
   ngOnInit(): void {
     this.cartaAMostrar = this.route.snapshot.paramMap.get('cartaDetalle')!;
     if (this.cartaAMostrar != null) {
+      if (this.cartaAMostrar === 'Alergenos') return;
       this.loadLista(this.cartaAMostrar);
     }
   }

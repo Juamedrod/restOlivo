@@ -40,7 +40,7 @@ export class CartaComponent implements OnInit {
         img: 'pescados.png'
       },
       {
-        label: 'Refrescos',
+        label: 'Bebidas',
         img: 'refrescos.jpeg'
       },
       {

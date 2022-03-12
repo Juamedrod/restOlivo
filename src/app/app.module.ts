@@ -9,6 +9,8 @@ import { CartaDetalleComponent } from './components/carta-detalle/carta-detalle.
 import { HorariosComponent } from './components/horarios/horarios.component';
 import { InfoComponent } from './components/info/info.component';
 import { AlergenoComponent } from './components/alergeno/alergeno.component';
+import { RouterModule } from '@angular/router';
+import { AlergenosComponent } from './components/alergenos/alergenos.component';
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { AlergenoComponent } from './components/alergeno/alergeno.component';
     HorariosComponent,
     InfoComponent,
     AlergenoComponent,
+    AlergenosComponent,
   ],
   imports: [
     BrowserModule,

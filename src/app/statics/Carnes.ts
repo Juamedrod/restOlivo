@@ -14,7 +14,7 @@ export const Carnes: Plato[] = [
     { nombre: 'Entrecot de ternera / Entrecote steak', alergenos: [0], precioMedia: 'X', precioEntera: '17.50' },
     { nombre: 'Chuletón de Retinto / T-bone retinto steak (local beef)', alergenos: [0], precioMedia: 'X', precioEntera: '(mínimo 700g/ración) 100g/4.00' },
     { nombre: 'Solomillo de Retinto / Fillet steak retinto (local beef)', alergenos: [0], precioMedia: 'X', precioEntera: '(mínimo 280g/ración) 100g/8.00' },
-    { nombre: 'Salsa el Olivo / House sauce', alergenos: [1, 7, 12], precioMedia: 'X', precioEntera: '1.50' },
-    { nombre: 'Salsa roquefort / House sauce', alergenos: [1, 7, 12], precioMedia: 'X', precioEntera: '1.50' },
-    { nombre: 'Salsa pimienta / House sauce', alergenos: [1, 7, 12], precioMedia: 'X', precioEntera: '1.50' },
+    { nombre: 'Salsa el Olivo / House sauce', alergenos: [1, 7, 12], precioMedia: 'X', precioEntera: '2.00' },
+    { nombre: 'Salsa roquefort / House sauce', alergenos: [1, 7, 12], precioMedia: 'X', precioEntera: '2.00' },
+    { nombre: 'Salsa pimienta / House sauce', alergenos: [1, 7, 12], precioMedia: 'X', precioEntera: '2.00' },
 ]

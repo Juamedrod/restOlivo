@@ -29,7 +29,7 @@ export const Bebidas: Plato[] = [
     { nombre: 'Tinto verano jarra (1 l)', alergenos: [0], precioMedia: 'X', precioEntera: '9.50' },
     { nombre: 'Sangría', alergenos: [0], precioMedia: 'X', precioEntera: '14.00' },
     { nombre: 'Copa vino (Rioja o Rivera del Duero)', alergenos: [0], precioMedia: 'X', precioEntera: '3.00' },
-    { nombre: 'Vino dulce/fino/Manzanilla/gloria/Solera 47/Alfonso', alergenos: [0], precioMedia: 'X', precioEntera: '2.00' },
+    { nombre: 'Vino dulce /fino /Manzanilla /gloria /Solera 47 /Alfonso', alergenos: [0], precioMedia: 'X', precioEntera: '2.00' },
     { nombre: 'Orujo de hierbas', alergenos: [0], precioMedia: 'X', precioEntera: '3.50' },
     { nombre: 'Pacharán', alergenos: [0], precioMedia: 'X', precioEntera: '3.50' },
     { nombre: 'Limoncello', alergenos: [0], precioMedia: 'X', precioEntera: '3.50' },
