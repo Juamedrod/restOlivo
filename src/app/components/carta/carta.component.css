@@ -1,0 +1,14 @@
+.mini{
+    height: 140px;
+    width: 140px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.shadowtextcustom{
+    text-shadow: 1px 1px 1px green;
+}
