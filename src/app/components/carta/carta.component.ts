@@ -13,15 +13,15 @@ export class CartaComponent implements OnInit {
     this.cartaItems = [
       {
         label: 'Desayunos',
-        img: 'desayunos.png'
+        img: 'desayunos.jpg'
       },
       {
         label: 'Aperitivos',
-        img: 'aperitivos.png'
+        img: 'aperitivos.jpg'
       },
       {
         label: 'Tapas',
-        img: 'tapas.png'
+        img: 'tapas.jpg'
       },
       {
         label: 'Entrantes',
@@ -37,7 +37,7 @@ export class CartaComponent implements OnInit {
       },
       {
         label: 'Pescados',
-        img: 'pescados.png'
+        img: 'pescados.jpg'
       },
       {
         label: 'Bebidas',
@@ -45,11 +45,11 @@ export class CartaComponent implements OnInit {
       },
       {
         label: 'Vinos',
-        img: 'vinos.png'
+        img: 'vinos.jpg'
       },
       {
         label: 'Alergenos',
-        img: 'gluten.png'
+        img: 'gluten.jpg'
       }
     ]
   }

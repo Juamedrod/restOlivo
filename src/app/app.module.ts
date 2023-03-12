@@ -11,6 +11,9 @@ import { InfoComponent } from './components/info/info.component';
 import { AlergenoComponent } from './components/alergeno/alergeno.component';
 import { RouterModule } from '@angular/router';
 import { AlergenosComponent } from './components/alergenos/alergenos.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 
 @NgModule({
@@ -26,9 +29,21 @@ import { AlergenosComponent } from './components/alergenos/alergenos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
