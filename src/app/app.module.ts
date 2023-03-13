@@ -14,6 +14,7 @@ import { AlergenosComponent } from './components/alergenos/alergenos.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgOptimizedImage } from '@angular/common'
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgOptimizedImage,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

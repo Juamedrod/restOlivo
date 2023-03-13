@@ -1,29 +1,28 @@
 <div class="container pt-3" id="carta">
-    <div class="row p-2">
-        <div class="col-6 col-md-4 text-center" *ngFor="let carta of cartaItems; ">
-            <div class="text-center">
-                <div class="mini" [routerLink]="['/carta/', carta.label]"
-                    [ngStyle]="{'background-image':'url(\'/assets/'+ carta.img + '\')'  }"></div>
-                <p class="h3 text-center text-dark shadowtextcustom pointered" [routerLink]="['/carta/', carta.label]">
-                    {{carta.label}}</p>
-            </div>
-        </div>
+  <div class="row p-2">
+    <div class="col-6 col-md-4 text-center carta-item" *ngFor="let carta of cartaItems; ">
+      <div class="mini">
+        <img [routerLink]="['/carta/', carta.label]" [ngSrc]="'/assets/'+ carta.img" [alt]="carta.label" fill>
+      </div>
+      <p class="h3 text-center text-dark shadowtextcustom pointered" [routerLink]="['/carta/', carta.label]">
+        {{carta.label}}</p>
     </div>
+  </div>
 
-    <hr class="featurette-divider">
+  <hr class="featurette-divider w-100 p-0">
 
-    <div class="row p-2">
-        <p class="text-center text-primary p-0 m-0">Menú del día (1 Agua, pan y postre) 15€</p>
-        <p class="text-center text-muted fs-6 p-0">Excepto Sábados, Domingos y festivos</p>
-    </div>
+  <div class="row p-2">
+    <p class="text-center text-primary p-0 m-0">Menú del día (1 Agua, pan y postre) 15€</p>
+    <p class="text-center text-muted fs-6 p-0">Excepto Sábados, Domingos y festivos</p>
+  </div>
 
-    <hr class="featurette-divider">
+  <hr class="featurette-divider">
 
-    <p class=" text-center text-primary">Servicio de mesa, pan y aceitunas 1€ por persona.</p>
-    <p class=" text-center text-primary">Cover charge, bread and Olives 1€ per customer.</p>
+  <p class=" text-center text-primary">Servicio de mesa, pan y aceitunas 1€ por persona.</p>
+  <p class=" text-center text-primary">Cover charge, bread and Olives 1€ per customer.</p>
 
-    <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
-    <hr class="featurette-divider">
+  <!-- START THE FEATURETTES -->
+  <hr class="featurette-divider">
+  <hr class="featurette-divider">
 
 </div>

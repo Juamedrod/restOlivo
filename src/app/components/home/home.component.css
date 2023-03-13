@@ -1,30 +1,19 @@
-.imagecustomized {
+.carousel-item {
   height: 300px;
   width: 100%;
-  background-image: url('/assets/coles.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
 }
 
-.imagecustomized2 {
-  height: 300px;
-  width: 100%;
-  background-image: url('/assets/asador.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.imagecustomized3 {
-  height: 300px;
-  width: 100%;
-  background-image: url('/assets/carnes.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+img {
+  object-fit: cover
 }
 
 .shadowedtext {
   text-shadow: 1px 2px 2px white, 1px 1px 5px white;
+}
+
+@media screen and ((min-width: 876px)) {
+  .carousel-item {
+    height: 85vh;
+  }
 }

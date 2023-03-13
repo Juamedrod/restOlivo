@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartaComponent implements OnInit {
 
-  cartaItems: any = [];
+  cartaItems: { label: string; img: string }[] = [];
 
   constructor() {
     this.cartaItems = [

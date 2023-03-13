@@ -1,20 +1,20 @@
-.mini{
-    height: 140px;
-    width: 140px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 auto;
+.mini {
+  position: relative;
+  height: 140px;
+  width: 140px;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
-.shadowtextcustom{
-    text-shadow: 0px 0px 2px green;
+img {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.pointered{
-    cursor: pointer;
+.shadowtextcustom {
+  text-shadow: 0px 0px 2px green;
 }
 
-
+.pointered {
+  cursor: pointer;
+}
