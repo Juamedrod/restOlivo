@@ -20,7 +20,7 @@ export class AppComponent {
   chooseLang(event: any) {
     try {
       const lang = event.target.value;
-      this.translate.use(event);
+      this.translate.use(lang);
     } catch (error) {
       this.translate.use('es');
     }
