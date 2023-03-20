@@ -24,6 +24,11 @@
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/info']">Información</a>
           </li>
+          <li class="nav-item">
+            <select (change)="chooseLang($event)">
+              <option value="es">Español</option>
+            </select>
+          </li>
         </ul>
       </div>
     </nav>

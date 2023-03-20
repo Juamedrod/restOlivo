@@ -12,7 +12,7 @@ import { AlergenoComponent } from './components/alergeno/alergeno.component';
 import { RouterModule } from '@angular/router';
 import { AlergenosComponent } from './components/alergenos/alergenos.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgOptimizedImage } from '@angular/common'
 
@@ -32,12 +32,14 @@ import { NgOptimizedImage } from '@angular/common'
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
-      }
+      },
+      defaultLanguage: 'es'
     })
   ],
   providers: [],
