@@ -13,19 +13,19 @@ export class CartaComponent implements OnInit {
     this.cartaItems = [
       {
         label: 'Desayunos',
-        img: 'desayunos.jpg'
+        img: 'desayunos.sm.jpg'
       },
       {
         label: 'Aperitivos',
-        img: 'aperitivos.jpg'
+        img: 'aperitivos.sm.jpg'
       },
       {
         label: 'Tapas',
-        img: 'tapas.jpg'
+        img: 'tapas.sm.jpg'
       },
       {
         label: 'Entrantes',
-        img: 'entrantes.jpg'
+        img: 'entrantes.sm.jpg'
       },
       {
         label: 'Sopas',
@@ -37,7 +37,7 @@ export class CartaComponent implements OnInit {
       },
       {
         label: 'Pescados',
-        img: 'pescados.jpg'
+        img: 'pescados.sm.jpg'
       },
       {
         label: 'Bebidas',
