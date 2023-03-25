@@ -21,6 +21,7 @@ select {
   color: white;
   border-radius: 0.5rem;
   border-color: white;
+  cursor: pointer;
 }
 
 select option {
