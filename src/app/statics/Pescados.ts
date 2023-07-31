@@ -8,8 +8,8 @@ export const Pescados: Plato[] = [
   { nombre: 'plato5', alergenos: [1, 14, 12], precioMedia: 'X', precioEntera: '22.00' },
   { nombre: 'plato6', alergenos: [1, 14, 12], precioMedia: 'X', precioEntera: '14.00' },
   { nombre: 'plato7', alergenos: [4, 12], precioMedia: 'X', precioEntera: '16.00' },
-  { nombre: 'plato11', alergenos: [4, 12], precioMedia: 'X', precioEntera: '24.00' },
-  { nombre: 'plato8', alergenos: [4], precioMedia: 'X', precioEntera: '(min. 200g/ración) 100g / 7.00' },
+  { nombre: 'plato8', alergenos: [4, 12], precioMedia: 'X', precioEntera: '24.00' },
+  /* { nombre: 'plato8', alergenos: [4], precioMedia: 'X', precioEntera: '(min. 200g/ración) 100g / 7.00' }, */
   { nombre: 'plato9', alergenos: [1, 3, 4, 12], precioMedia: 'X', precioEntera: '14.00' },
   { nombre: 'plato10', alergenos: [1, 2, 3, 14, 7, 12, 6], precioMedia: 'X', precioEntera: '10.50' },
 ]
