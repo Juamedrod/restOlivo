@@ -3,7 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import Plato from 'src/app/interfaces/plato.interface';
 import Vino from 'src/app/interfaces/vino.interface';
 import { CartaService } from 'src/app/services/carta.service';
-import jsPDF from 'jspdf';
+import jsPDF, { GState } from 'jspdf';
+import { TranslateService } from '@ngx-translate/core';
+import { font } from 'src/assets/font/merienda';
 
 @Component({
   selector: 'carta-detalle',
@@ -22,7 +24,8 @@ export class CartaDetalleComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private cartaService: CartaService,
-    private router: Router
+    private router: Router,
+    private translateService: TranslateService
   ) {
     this.lista = [
       {
@@ -84,6 +87,115 @@ export class CartaDetalleComponent implements OnInit {
       autoPaging: 'text',
       callback: () => doc.save(this.cartaAMostrar + '.pdf'),
     });
+  }
+
+  async beautyPDF() {
+    const platos = this.lista.map((plato) => {
+      return {
+        ...plato,
+        nombre: this.translateService.instant(
+          this.cartaAMostrar + '.' + plato.nombre
+        ),
+      };
+    });
+    const doc = new jsPDF();
+
+    // Set custom font
+    doc.addFileToVFS('MeriendaOne-Regular.ttf', font);
+    doc.addFont('MeriendaOne-Regular.ttf', 'MeriendaOne', 'normal');
+    doc.setFont('MeriendaOne');
+
+    // Add image with 60% opacity
+    const img = new Image();
+    img.src = 'assets/olivo.png';
+    doc.setGState(new GState({ opacity: 0.15 }));
+    doc.addImage(img, 'JPEG', 20, 10, 50, 70, undefined, undefined, -10);
+    doc.setGState(new GState({ opacity: 1 }));
+
+    let y = 40;
+
+    platos.forEach((plato, i) => {
+      // Check if y has exceeded page limit and add new page if necessary
+      if (y > doc.internal.pageSize.height - 20) {
+        doc.addPage();
+        y = 20;
+      }
+
+      doc.setFontSize(i === 0 ? 14 : 12);
+
+      // Split plato.nombre into multiple lines if it exceeds max width
+      const lines = doc.splitTextToSize(plato.nombre, 80);
+      lines.forEach((line: any) => {
+        doc.text(line, 20, y);
+        y += 10;
+      });
+
+      doc.text(
+        plato.precioMedia !== 'X' ? `${plato.precioMedia}€` : '',
+        110,
+        y - 10
+      );
+      doc.text(
+        `${plato.precioEntera}€`,
+        plato.precioEntera.length < 20 ? 150 : 110,
+        y - 10
+      );
+      console.log(plato.nombre, plato.precioEntera, plato.precioEntera.length);
+
+      // Add horizontal line
+      doc.setLineWidth(0.5);
+      doc.line(20, y, 180, y);
+
+      y += 10;
+    });
+
+    doc.save(`${this.cartaAMostrar}.pdf`);
+  }
+
+  async beautyWinesPDF() {
+    const doc = new jsPDF();
+
+    // Set custom font
+    doc.addFileToVFS('MeriendaOne-Regular.ttf', font);
+    doc.addFont('MeriendaOne-Regular.ttf', 'MeriendaOne', 'normal');
+    doc.setFont('MeriendaOne');
+
+    // Add image with 60% opacity
+    const img = new Image();
+    img.src = 'assets/olivo.png';
+    doc.setGState(new GState({ opacity: 0.15 }));
+    doc.addImage(img, 'JPEG', 20, 10, 50, 70, undefined, undefined, -10);
+    doc.setGState(new GState({ opacity: 1 }));
+
+    let y = 40;
+
+    this.listaVinos.forEach((vino, i) => {
+      // Check if y has exceeded page limit and add new page if necessary
+      if (y > doc.internal.pageSize.height - 20) {
+        doc.addPage();
+        y = 20;
+      }
+
+      doc.setFontSize(i === 0 ? 14 : 12);
+
+      // Split plato.nombre into multiple lines if it exceeds max width
+      const lines = doc.splitTextToSize(vino.nombre, 80);
+      lines.forEach((line: any) => {
+        doc.text(line, 20, y);
+        y += 10;
+      });
+
+      doc.text('', 110, y - 10);
+      doc.text(`${vino.precio}€`, 150, y - 10);
+
+      // Add horizontal line
+      doc.setLineWidth(0.5);
+      doc.line(20, y, 180, y);
+
+      y += 10;
+    });
+
+    doc.save(`${this.cartaAMostrar}.pdf`);
   }
 
   toggler() {

@@ -55,4 +55,6 @@
   </div>
 </main>
 
-<img src="assets\icons\pdf.svg" alt="Descargar a PDF" (click)="convertToPdf()">
+<!-- Botón para descargar carta a pdf -->
+<img src="assets\icons\pdf.svg" alt="Descargar a PDF"
+  (click)="cartaAMostrar==='Vinos' ? beautyWinesPDF() : beautyPDF() ">
