@@ -1,7 +1,15 @@
-.toggled{
-    height:0;
+.toggled {
+  height: 0;
 }
 
-.fuenteTamanio{
-    font-size: 10px;
+.fuenteTamanio {
+  font-size: 10px;
+}
+
+img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 1rem auto;
 }
