@@ -7,7 +7,7 @@ export const Entrantes: Plato[] = [
   { nombre: 'plato4', alergenos: [7, 12, 6, 3], precioMedia: 'X', precioEntera: '12.00' },
   { nombre: 'plato5', alergenos: [1, 12, 8, 10], precioMedia: 'X', precioEntera: '14.00' },
   { nombre: 'plato6', alergenos: [1, 12, 8, 5], precioMedia: 'X', precioEntera: '14.00' },
-  { nombre: 'plato7', alergenos: [12], precioMedia: 'X', precioEntera: '15.00' },
+  { nombre: 'plato7', alergenos: [12], precioMedia: 'X', precioEntera: '16.00' },
   { nombre: 'plato8', alergenos: [12, 3], precioMedia: 'X', precioEntera: '11.50' },
   { nombre: 'plato9', alergenos: [2, 3, 12], precioMedia: 'X', precioEntera: '14.00' },
   { nombre: 'plato10', alergenos: [1, 3, 7, 12, 2], precioMedia: 'X', precioEntera: '20.00' },

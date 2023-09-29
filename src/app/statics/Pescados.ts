@@ -11,5 +11,5 @@ export const Pescados: Plato[] = [
   { nombre: 'plato8', alergenos: [4, 12], precioMedia: 'X', precioEntera: '24.00' },
   /* { nombre: 'plato8', alergenos: [4], precioMedia: 'X', precioEntera: '(min. 200g/ración) 100g / 7.00' }, */
   { nombre: 'plato9', alergenos: [1, 3, 4, 12], precioMedia: 'X', precioEntera: '14.00' },
-  { nombre: 'plato10', alergenos: [1, 2, 3, 14, 7, 12, 6], precioMedia: 'X', precioEntera: '10.50' },
+  { nombre: 'plato10', alergenos: [1, 2, 3, 14, 7, 12, 6], precioMedia: 'X', precioEntera: '12.00' },
 ]
