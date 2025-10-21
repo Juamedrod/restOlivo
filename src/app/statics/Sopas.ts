@@ -34,22 +34,4 @@ export const Sopas: Plato[] = [
     precioEntera: '8.00',
   },
   { nombre: 'plato8', alergenos: [0], precioMedia: 'X', precioEntera: '10.50' },
-  {
-    nombre: 'plato9',
-    alergenos: [1, 2, 14, 4, 12],
-    precioMedia: 'X',
-    precioEntera: '30.00',
-  },
-  {
-    nombre: 'plato10',
-    alergenos: [1, 9, 12],
-    precioMedia: 'X',
-    precioEntera: '30.00',
-  },
-  {
-    nombre: 'plato11',
-    alergenos: [1, 2, 14, 4, 12],
-    precioMedia: 'X',
-    precioEntera: '40.00',
-  },
 ];
