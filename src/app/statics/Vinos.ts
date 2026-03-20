@@ -4,36 +4,36 @@ export const Vinos: Vino[] = [
   //Riojas 3/4
   // { nombre: 'Arnequi Crianza', denominacion: 'Rioja 3/4', precio: 14, alergenos: [12] },
   // { nombre: 'Beronia Crianza', denominacion: 'Rioja 3/4', precio: 15, alergenos: [12] },
-  { nombre: 'Muga', denominacion: 'Rioja 3/4', precio: 34.0, alergenos: [12] },
+  { nombre: 'Muga', denominacion: 'Rioja 3/4', precio: 37.74, alergenos: [12] },
   {
     nombre: 'Martin Cendoya',
     denominacion: 'Rioja 3/4',
-    precio: 36.0,
+    precio: 39.96,
     alergenos: [12],
   },
   {
     nombre: 'La Vicalanda',
     denominacion: 'Rioja 3/4',
-    precio: 39.0,
+    precio: 43.29,
     alergenos: [12],
   },
   {
     nombre: 'Cuarenta de Eguren',
     denominacion: 'Rioja 3/4',
-    precio: 19.0,
+    precio: 21.09,
     alergenos: [12],
   },
   //RIoja MAGNUM
   {
     nombre: 'Eguren Ugarte Magnum',
     denominacion: 'Rioja Magnum',
-    precio: 26.0,
+    precio: 28.86,
     alergenos: [12],
   },
   {
     nombre: 'Viña Pomal Crianza Magnum',
     denominacion: 'Rioja Magnum',
-    precio: 36.0,
+    precio: 39.96,
     alergenos: [12],
   },
   // { nombre: 'Lágrimas de Maria Magnum', denominacion: 'Rioja Magnum', precio: 28, alergenos: [12] },
@@ -42,19 +42,19 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Arnegui',
     denominacion: 'Rioja Magnum',
-    precio: 27.0,
+    precio: 29.97,
     alergenos: [12],
   },
   {
     nombre: 'Barón de ley',
     denominacion: 'Rioja Magnum',
-    precio: 34.0,
+    precio: 37.74,
     alergenos: [12],
   },
   {
     nombre: 'Finca Moncloa',
     denominacion: 'Rioja Magnum',
-    precio: 55.0,
+    precio: 61.05,
     alergenos: [12],
   },
 
@@ -69,25 +69,25 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Viña Mayor Roble',
     denominacion: 'Ribera Del Duero 3/4',
-    precio: 19.0,
+    precio: 21.09,
     alergenos: [12],
   },
   {
     nombre: 'Viña Mayor Crianza',
     denominacion: 'Ribera Del Duero 3/4',
-    precio: 24.0,
+    precio: 26.64,
     alergenos: [12],
   },
   {
     nombre: 'Protos Roble',
     denominacion: 'Ribera Del Duero 3/4',
-    precio: 20.0,
+    precio: 22.20,
     alergenos: [12],
   },
   {
     nombre: 'Protos Crianza',
     denominacion: 'Ribera Del Duero 3/4',
-    precio: 26.0,
+    precio: 28.86,
     alergenos: [12],
   },
   // { nombre: 'Legaris Roble', denominacion: 'Ribera Del Duero 3/4', precio: 16.75, alergenos: [12] },
@@ -97,14 +97,14 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Biberius Roble',
     denominacion: 'Ribera Del Duero 3/4',
-    precio: 25.0,
+    precio: 27.75,
     alergenos: [12],
   },
   // { nombre: 'Comenger Crianza', denominacion: 'Ribera Del Duero 3/4', precio: 28, alergenos: [12] },
   {
     nombre: 'Comenger Cosecha',
     denominacion: 'Ribera Del Duero 3/4',
-    precio: 23.0,
+    precio: 25.53,
     alergenos: [12],
   },
 
@@ -120,19 +120,19 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Condado de Oriza',
     denominacion: 'Ribera Del Duero Magnum',
-    precio: 29.0,
+    precio: 32.19,
     alergenos: [12],
   },
   {
     nombre: 'Montebellón Tempranillo',
     denominacion: 'Ribera Del Duero Magnum',
-    precio: 25.0,
+    precio: 27.75,
     alergenos: [12],
   },
   {
     nombre: 'Montebellón Reserva',
     denominacion: 'Ribera Del Duero Magnum',
-    precio: 38.0,
+    precio: 42.18,
     alergenos: [12],
   },
 
@@ -140,13 +140,13 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Finca Moncloa',
     denominacion: 'Vinos de la tierra',
-    precio: 24.0,
+    precio: 26.64,
     alergenos: [12],
   },
   {
     nombre: 'Garum',
     denominacion: 'Vinos de la tierra',
-    precio: 26.0,
+    precio: 28.86,
     alergenos: [12],
   },
   // { nombre: 'Tierra Sur Magnum', denominacion: 'Vinos de la tierra', precio: 18, alergenos: [12] },
@@ -154,13 +154,13 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Samaruco',
     denominacion: 'Vinos de la tierra',
-    precio: 28.0,
+    precio: 31.08,
     alergenos: [12],
   },
   {
     nombre: 'Ibarguen',
     denominacion: 'Vinos de la tierra',
-    precio: 13.5,
+    precio: 14.99,
     alergenos: [12],
   },
 
@@ -170,50 +170,50 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Tierra Blanca',
     denominacion: 'Blancos 3/4',
-    precio: 13.5,
+    precio: 14.99,
     alergenos: [12],
   },
   {
     nombre: 'Tierra Blanca Semi',
     denominacion: 'Blancos 3/4',
-    precio: 13.5,
+    precio: 14.99,
     alergenos: [12],
   },
   // { nombre: 'Pulpo (Albariño)', denominacion: 'Blancos 3/4', precio: 26, alergenos: [12] },
   {
     nombre: 'Cantarranas (Verdejo)',
     denominacion: 'Blancos 3/4',
-    precio: 14.5,
+    precio: 16.10,
     alergenos: [12],
   },
   {
     nombre: 'Jose Pariente',
     denominacion: 'Blancos 3/4',
-    precio: 24.0,
+    precio: 26.64,
     alergenos: [12],
   },
   {
     nombre: 'Martín Codax',
     denominacion: 'Blancos 3/4',
-    precio: 24.0,
+    precio: 26.64,
     alergenos: [12],
   },
   {
     nombre: 'Cloe',
     denominacion: 'Blancos 3/4',
-    precio: 17.0,
+    precio: 18.87,
     alergenos: [12],
   },
   {
     nombre: 'Pago del Vicario',
     denominacion: 'Blancos 3/4',
-    precio: 12.0,
+    precio: 13.32,
     alergenos: [12],
   },
   {
     nombre: 'Entrechuelos',
     denominacion: 'Blancos 3/4',
-    precio: 12.0,
+    precio: 13.32,
     alergenos: [12],
   },
 
@@ -221,13 +221,13 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Marques de Vizhoja',
     denominacion: 'Blancos Magnum',
-    precio: 23,
+    precio: 25.53,
     alergenos: [12],
   },
   {
     nombre: 'Analivia',
     denominacion: 'Blancos Magnum',
-    precio: 29.0,
+    precio: 32.19,
     alergenos: [12],
   },
 
@@ -235,13 +235,13 @@ export const Vinos: Vino[] = [
   {
     nombre: 'Lancer',
     denominacion: 'Rosados 3/4',
-    precio: 9.0,
+    precio: 9.99,
     alergenos: [12],
   },
   {
     nombre: 'De Casta',
     denominacion: 'Rosados 3/4',
-    precio: 14.0,
+    precio: 15.54,
     alergenos: [12],
   },
 ];
