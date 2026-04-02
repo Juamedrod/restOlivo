@@ -80,6 +80,6 @@ export const Aperitivos: Plato[] = [
     precioMedia: 'X',
     precioEntera: '(min. 5) unidad/ 2.70',
   },
-  { nombre: 'plato15', alergenos: [0], precioMedia: 'X', precioEntera: '0.60' },
-  { nombre: 'plato16', alergenos: [0], precioMedia: 'X', precioEntera: '0.60' },
+  { nombre: 'plato15', alergenos: [0], precioMedia: 'X', precioEntera: '1.00' },
+  { nombre: 'plato16', alergenos: [0], precioMedia: 'X', precioEntera: '1.00' },
 ];

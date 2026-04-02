@@ -71,5 +71,5 @@ export const Desayunos: Plato[] = [
   { nombre: 'plato24', alergenos: [3], precioMedia: 'X', precioEntera: '9.00' },
   { nombre: 'plato26', alergenos: [0], precioMedia: 'X', precioEntera: '3.00' },
   { nombre: 'plato28', alergenos: [0], precioMedia: 'X', precioEntera: '3.00' },
-  { nombre: 'plato30', alergenos: [0], precioMedia: 'X', precioEntera: '1.11' },
+  { nombre: 'plato30', alergenos: [0], precioMedia: 'X', precioEntera: '1.50' },
 ];
